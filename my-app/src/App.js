@@ -1,12 +1,14 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
+import Catelog from './pages/Catelog';
+import EventPage from './pages/EventPage';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/" element={<Catelog />} />
+				<Route path="/event" element={<EventPage />} />
 			</Routes>
 		</BrowserRouter>
 	);
